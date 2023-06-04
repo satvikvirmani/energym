@@ -1,0 +1,54 @@
+main.merch {
+  width: 100%;
+  padding: 40px 0;
+}
+main.merch h1.heading {
+  font-size: 48px;
+  text-align: center;
+  margin: 20px auto;
+}
+main.merch div.container {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+main.merch div.container div.product {
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: 1;
+  border: 2px solid #001D3D;
+}
+main.merch div.container div.product:hover {
+  cursor: pointer;
+}
+main.merch div.container div.product div.image {
+  grid-row: 1/8;
+  grid-column: 1;
+}
+main.merch div.container div.product div.image img {
+  width: 100%;
+  height: 100%;
+}
+main.merch div.container div.product div.info {
+  grid-row: 8/9;
+  grid-column: 1;
+  text-align: center;
+  font-size: 18px;
+}
+main.merch div.container div.product div.info div.rating {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+main.merch div.container div.product div.info div.rating span i::before {
+  margin: 0;
+}
+main.merch div.container div.product div.info div.price {
+  font-size: 22px;
+}/*# sourceMappingURL=merch.css.map */

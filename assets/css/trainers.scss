@@ -1,0 +1,75 @@
+$base-color: #000814;
+$base-color-invert: #cad2c5;
+$accent-dark: #FFC300;
+$accent-bright: #FFD60A;
+$compliment-dark: #001D3D;
+$compliment-bright: #003566;
+$color-dark: #e7ecef;
+$color-bright: #f8f7ff;
+
+$size-display: 72px;
+$size-heading: 48px;
+$size-subheading: 32px;
+$size-callout: 28px;
+$size-emphase: 22px;
+$size-body: 18px;
+
+main.trainers{
+    width: 100%;
+    padding: 40px 0;
+    h1.heading{
+        font-size: $size-heading;
+        text-align: center;
+        margin: 20px auto;
+        color: $base-color;
+    }
+    div.container{
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        div.item{
+            border: 2px solid $compliment-dark;
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 8px;
+            div.itemText{
+                grid-row: 1;
+                grid-column: 4 / 6;
+                font-size: $size-body;
+                div.rating{
+                    margin: 40px 0;
+                    h4{
+                        font-size: $size-emphase;
+                        color: $compliment-dark;
+                    }
+                    div.stars{
+                        margin: 20px 0;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: stretch;
+                        i{
+                            &::before{
+                                margin: 0;
+                                font-size: $size-callout;
+                            }
+                        }
+                    }
+                }
+            }
+            div.itemImg{
+                grid-row: 1;
+                grid-column: 1 / 4;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+}
+
+body {
+  max-width: 100%;
+}
+
+header.mainNav {
+  width: 100%;
+  background-color: #000814;
+}
+header.mainNav nav.navbar {
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+header.mainNav nav.navbar div.links ul.linksList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
+  gap: 4px;
+}
+header.mainNav nav.navbar div.links ul.linksList li.link {
+  font-size: 22px;
+}
+header.mainNav nav.navbar div.links ul.linksList li.link a.linkText {
+  color: #e7ecef;
+}
+header.mainNav nav.navbar div.links ul.linksList li.link a.linkText:hover {
+  color: #f8f7ff;
+}
+header.mainNav nav.navbar div.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+header.mainNav nav.navbar div.logo a.logoText {
+  font-variant-caps: small-caps;
+  color: #FFD60A;
+  font-size: 72px;
+}
+
+footer.mainFooter {
+  padding: 40px 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: #000814;
+}
+footer.mainFooter div.getInTouch h4 {
+  margin: 20px 0;
+  font-size: 32px;
+  color: #FFC300;
+}
+footer.mainFooter div.getInTouch p {
+  font-size: 22px;
+  color: #cad2c5;
+}
+footer.mainFooter div.quickLinks h4 {
+  margin: 20px 0;
+  font-size: 32px;
+  color: #FFC300;
+}
+footer.mainFooter div.quickLinks ul {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+footer.mainFooter div.quickLinks ul li a {
+  font-size: 18px;
+  color: #e7ecef;
+}
+footer.mainFooter div.quickLinks ul li a:hover {
+  color: #f8f7ff;
+}
+footer.mainFooter div.hours h4 {
+  margin: 20px 0;
+  font-size: 32px;
+  color: #FFC300;
+}
+footer.mainFooter div.hours h6 {
+  font-size: 22px;
+  color: #e7ecef;
+}
+footer.mainFooter div.hours p {
+  font-size: 18px;
+  color: #f8f7ff;
+}
+
+footer.credits {
+  background-color: #000814;
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+  color: #e7ecef;
+}/*# sourceMappingURL=common.css.map */

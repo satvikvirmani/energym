@@ -1,0 +1,58 @@
+main.services {
+  width: 100%;
+  padding: 40px 0;
+}
+main.services h1.heading {
+  font-size: 48px;
+  text-align: center;
+  margin: 20px auto;
+  color: #000814;
+}
+main.services div.container {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+}
+main.services div.container div.service {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 350px;
+  position: relative;
+}
+main.services div.container div.service:nth-child(1) {
+  background-image: url("../image/services/s-1.jpg");
+}
+main.services div.container div.service:nth-child(2) {
+  background-image: url("../image/services/s-2.jpg");
+}
+main.services div.container div.service:nth-child(3) {
+  background-image: url("../image/services/s-3.jpg");
+}
+main.services div.container div.service:nth-child(4) {
+  background-image: url("../image/services/s-4.jpg");
+}
+main.services div.container div.service:nth-child(5) {
+  background-image: url("../image/services/s-5.jpg");
+}
+main.services div.container div.service:nth-child(6) {
+  background-image: url("../image/services/s-6.jpg");
+}
+main.services div.container div.service:hover {
+  cursor: pointer;
+}
+main.services div.container div.service div.text {
+  width: 100%;
+  padding: 8px;
+  font-size: 20px;
+  background: rgba(0, 8, 20, 0.9);
+  color: #f8f7ff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+main.services div.container div.service div.text div.additionalInfo {
+  display: none;
+}/*# sourceMappingURL=services.css.map */
